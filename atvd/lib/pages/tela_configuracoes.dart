@@ -8,7 +8,6 @@ class TelaConfiguracoes extends StatefulWidget {
 }
 
 class _TelaConfiguracoesState extends State<TelaConfiguracoes> {
-  // Variáveis para controlar os estados dos botões liga/desliga
   bool _notificacoesAtivas = true;
   bool _modoEscuro = false;
 
