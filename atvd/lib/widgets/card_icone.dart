@@ -7,6 +7,7 @@ class CardIcone extends StatelessWidget {
   final String textoBotao;
   final Color cor;
   final VoidCallback aoClicar;
+  final VoidCallback aoSegurar; 
 
   const CardIcone({
     super.key,
@@ -16,6 +17,7 @@ class CardIcone extends StatelessWidget {
     required this.textoBotao,
     required this.cor,
     required this.aoClicar,
+    required this.aoSegurar,
   });
 
   @override
@@ -60,6 +62,7 @@ class CardIcone extends StatelessWidget {
                 const SizedBox(height: 12),
                 ElevatedButton(
                   onPressed: aoClicar,
+                  onLongPress: aoSegurar, 
                   style: ElevatedButton.styleFrom(
                     backgroundColor: cor,
                     foregroundColor: Colors.white,
